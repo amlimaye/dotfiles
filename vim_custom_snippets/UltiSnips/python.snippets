@@ -1,0 +1,35 @@
+snippet defmain
+def main():
+	$0
+
+if __name__ == "__main__":
+	main()
+endsnippet
+
+snippet defmains
+import sys
+
+def main(sargs):
+	$0
+
+if __name__ == "__main__":
+	main(sys.argv[1:])
+endsnippet
+
+snippet gshb
+#!/usr/bin/garden-exec
+#{
+# FOO load $1
+# exec python \$0 "\$@"
+#}
+
+$0
+endsnippet
+
+snippet aparse
+import argparse
+p = argparse.ArgumentParser()
+p.add_argument($1)
+args = p.parse_args()
+$0
+endsnippet
